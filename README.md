@@ -59,12 +59,12 @@ Clone Repository - run the following commands in the parent folder
 
 Making Patch:
 
-    located under \intern\cycles\device\cuda\device.cpp 
+   located under \intern\cycles\device\cuda\device.cpp 
     Open the device.ccp in a text/code editor
             example: "C:\Blender_git\blender\intern\cycles\device\cuda\device.cpp"
 
 
-    Find the function: if (!cudaSupportsDevice(num)) 
+   Find the function: if (!cudaSupportsDevice(num)) 
         Should look like:
 
     if (!cudaSupportsDevice(num)) {
@@ -73,9 +73,9 @@ Making Patch:
     }
 
 
-{    Replace the function with the one below and Save the file - READ THE INSTRUCTIONS ABOVE FUNCTION FIRST
+   Replace the function with the one below and Save the file - READ THE INSTRUCTIONS ABOVE FUNCTION FIRST
 
- {   //Using your graphics card name in place of MX350 and the (major == 6 && minor == 1) is for CUDA 6.1, replace with your CUDA structure//
+   //Using your graphics card name in place of MX350 and the (major == 6 && minor == 1) is for CUDA 6.1, replace with your CUDA structure//
     Function:
     
     if (!cudaSupportsDevice(num)) {
@@ -101,16 +101,16 @@ Build Commands, in the blender folder e.g. C:\Blender_git\blender>
         mkdir build
 
         cd build
-}  
-    //In the following replace sm_61 with your cuda graphics architechture (ensures not having to compile every single GPU, only your specific one) //
+ 
+  //In the following replace sm_61 with your cuda graphics architechture (ensures not having to compile every single GPU, only your specific one) //
     Run this command
     
     cmake .. -G "Visual Studio 17 2022" -A x64 ^
     -DWITH_CYCLES_CUDA_BINARIES=ON ^
     -DCUDA_TOOLKIT_ROOT_DIR="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8" ^
     -DCYCLES_CUDA_BINARIES_ARCH=sm_61
-}
-    Final command:
+
+   Final command:
     
     cmake --build . --config Release --target install
 
