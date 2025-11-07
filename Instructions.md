@@ -1,14 +1,14 @@
 Patch Instructions:
 
-Prerequisties
+**Prerequisties**
 
-  Info:
+  *Info:*
   
     A version of CUDA downloaded from NVIDIA, this version used CUDA 12.8: 
     Microsoft Visual Studio 2022 - Community edition is fine
     Know Your Graphics Card name and CUDA version
 
-   Instructions:
+   *Instructions:*
     CUDA: 
         Download the network version of CUDA from NVIDIA, 
         
@@ -44,13 +44,13 @@ Ignore Any Warnings about visual studio not found at the end
 
 
 
-Main Instructions
+**Main Instructions**
 
-Parent Folder: Must not have spaces in name, then cd into Folder
+*Parent Folder:* Must not have spaces in name, then cd into Folder
 
     e.g.    C:\Blender_git>
 
-Clone Repository - run the following commands in the parent folder
+*Clone Repository* - run the following commands in the parent folder
 
     git clone https://projects.blender.org/blender/blender.git blender
 
@@ -67,7 +67,7 @@ Clone Repository - run the following commands in the parent folder
 
 
 
-Making Patch:
+*Making Patch:*
 
    Open device.cpp
    
@@ -102,7 +102,7 @@ Making Patch:
     
         
 
-Build Commands, in the blender folder e.g. C:\Blender_git\blender>
+*Build Commands, in the blender folder e.g. C:\Blender_git\blender>*
     
         python .\build_files\utils\make_update.py
 
@@ -125,6 +125,7 @@ Build Commands, in the blender folder e.g. C:\Blender_git\blender>
 
 
 The build can take hours so remain patient, especially with the CUDA compile, its not stuck, just takes a while.
+
 
 
 
