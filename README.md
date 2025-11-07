@@ -5,7 +5,7 @@ With the release of blender 5.0 gpu minimum requirements have been update to req
 
 Patch Instructions:
 
-Requirements:
+Prerequisties
     Info:
       A version of CUDA downloaded from NVIDIA, this version used CUDA 12.8: 
       Microsoft Visual Studio 2022 - Community edition is fine
@@ -34,9 +34,7 @@ Ignore Any Warnings about visual studio not found at the end
 
 
 
-Main Instructions:
-
-Setup:
+Main Instructions
 
 Parent Folder: Must not have spaces in name, then cd into Folder
 
@@ -61,9 +59,10 @@ Clone Repository - run the following commands in the parent folder
 
 Making Patch:
 
-    find and open the device.cpp in a text or code editor e.g. notepad - 
-        located under \intern\cycles\device\cuda\device.cpp 
+    located under \intern\cycles\device\cuda\device.cpp 
+    Open the device.ccp in a text/code editor
             example: "C:\Blender_git\blender\intern\cycles\device\cuda\device.cpp"
+
 
     Find the function: if (!cudaSupportsDevice(num)) 
         Should look like:
@@ -73,9 +72,10 @@ Making Patch:
       continue;
     }
 
-    Replace the function with the one below and Save the file - READ THE INSTRUCTIONS ABOVE FUNCTION FIRST
 
-    //Using your graphics card name in place of MX350 and the (major == 6 && minor == 1) is for CUDA 6.1, replace with your CUDA structure//
+{    Replace the function with the one below and Save the file - READ THE INSTRUCTIONS ABOVE FUNCTION FIRST
+
+ {   //Using your graphics card name in place of MX350 and the (major == 6 && minor == 1) is for CUDA 6.1, replace with your CUDA structure//
     Function:
     
     if (!cudaSupportsDevice(num)) {
@@ -95,24 +95,26 @@ Making Patch:
         
 
 Build Commands, in the blender folder e.g. C:\Blender_git\blender>
+    
+        python .\build_files\utils\make_update.py
 
-    python .\build_files\utils\make_update.py
+        mkdir build
 
-    mkdir build
-
-    cd build
-
+        cd build
+}
+    {  
     //In the following replace sm_61 with your cuda graphics architechture (ensures not having to compile every single GPU, only your specific one) //
     Run this command
+    
     cmake .. -G "Visual Studio 17 2022" -A x64 ^
-   -DWITH_CYCLES_CUDA_BINARIES=ON ^
-   -DCUDA_TOOLKIT_ROOT_DIR="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8" ^
-   -DCYCLES_CUDA_BINARIES_ARCH=sm_61
-
-
+    -DWITH_CYCLES_CUDA_BINARIES=ON ^
+    -DCUDA_TOOLKIT_ROOT_DIR="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8" ^
+    -DCYCLES_CUDA_BINARIES_ARCH=sm_61
+}
     Final command:
+    
     cmake --build . --config Release --target install
-
+}
 
     The build can take hours so remain patient, especially with the CUDA compile, its not stuck, just takes a while.
 
