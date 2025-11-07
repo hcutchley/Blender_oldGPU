@@ -40,9 +40,11 @@ Prerequisties and their installation instructions below:
 
 Ignore Any Warnings about visual studio not found at the end
 
-      Visual Studio Code:
-        Download from: https://visualstudio.microsoft.com/downloads/   - Community Edition Works
-        When installing check the following:  
+   Visual Studio Code:
+        Download from: 
+        
+        https://visualstudio.microsoft.com/downloads/   - Community Edition Works
+   When installing check the following:  
 <img width="146" height="256" alt="image" src="https://github.com/user-attachments/assets/fe53fab3-049b-4c80-af62-3b2dd1d6e0aa" />
  
 
