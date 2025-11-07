@@ -25,7 +25,8 @@ Ignore Any Warnings about visual studio not found at the end
       Visual Studio Code:
         Download from: https://visualstudio.microsoft.com/downloads/   - Community Edition Works
         When installing check the following:  
-![alt text](image.png)    
+<img width="146" height="256" alt="image" src="https://github.com/user-attachments/assets/fe53fab3-049b-4c80-af62-3b2dd1d6e0aa" />
+ 
 
       CUDA Capability:
       Check your card at https://developer.nvidia.com/cuda-gpus or https://developer.nvidia.com/cuda-legacy-gpus
