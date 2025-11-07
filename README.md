@@ -99,8 +99,9 @@ Build Commands, in the blender folder e.g. C:\Blender_git\blender>
 
         cd build
  
-  //In the following replace sm_61 with your cuda graphics architechture (ensures not having to compile every single GPU, only your specific one) //
-    Run this command
+  In the following replace sm_61 with your cuda graphics architechture (ensures not having to compile every single GPU, only your specific one) 
+  
+   Run this command
     
     cmake .. -G "Visual Studio 17 2022" -A x64 ^
     -DWITH_CYCLES_CUDA_BINARIES=ON ^
