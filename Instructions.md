@@ -9,7 +9,8 @@ Patch Instructions:
     Know Your Graphics Card name and CUDA version
 
    *Instructions:*
-    CUDA: 
+ 
+   CUDA: 
         Download the network version of CUDA from NVIDIA, 
         
             https://developer.nvidia.com/cuda-12-8-0-download-archive
@@ -125,6 +126,7 @@ Ignore Any Warnings about visual studio not found at the end
 
 
 The build can take hours so remain patient, especially with the CUDA compile, its not stuck, just takes a while.
+
 
 
 
