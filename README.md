@@ -15,7 +15,7 @@ Requirements:
       CUDA: 
         Download the network version of CUDA from NVIDIA, e.g. https://developer.nvidia.com/cuda-12-8-0-download-archive
         Run installer, when given options for install go to advanced and only select the CUDA, you don't need anything else and don't want to override your current drivers etc.
-<img width="439" height="767" alt="image" src="https://github.com/user-attachments/assets/f3c4ea46-f741-4208-ac45-9465a17ba417" />
+<img width="44" height="77" alt="image" src="https://github.com/user-attachments/assets/f3c4ea46-f741-4208-ac45-9465a17ba417" />
 
 ![alt text](image-4.png)
 Ignore Warnings about visual studio not found
