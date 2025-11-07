@@ -101,8 +101,7 @@ Build Commands, in the blender folder e.g. C:\Blender_git\blender>
         mkdir build
 
         cd build
-}
-    {  
+}  
     //In the following replace sm_61 with your cuda graphics architechture (ensures not having to compile every single GPU, only your specific one) //
     Run this command
     
@@ -114,9 +113,9 @@ Build Commands, in the blender folder e.g. C:\Blender_git\blender>
     Final command:
     
     cmake --build . --config Release --target install
-}
 
-    The build can take hours so remain patient, especially with the CUDA compile, its not stuck, just takes a while.
+
+The build can take hours so remain patient, especially with the CUDA compile, its not stuck, just takes a while.
 
 
 
