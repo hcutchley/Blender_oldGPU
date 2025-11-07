@@ -72,7 +72,7 @@ Making Patch:
     }
    Replace the function with the one below and save - READ THE INSTRUCTIONS BELOW FIRST
 
-   //Using your graphics card name in place of MX350 and the (major == 6 && minor == 1) is for CUDA 6.1, replace with your CUDA structure//
+   Replace MX350 with your card name, and 6.1 CUDA is (major == 6 && minor == 1), change for your cuda
     Function:
     
     if (!cudaSupportsDevice(num)) {
