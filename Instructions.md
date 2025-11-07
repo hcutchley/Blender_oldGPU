@@ -2,17 +2,18 @@ Patch Instructions:
 
 Prerequisties
 
-   Info:
-   
-      A version of CUDA downloaded from NVIDIA, this version used CUDA 12.8: 
-      Microsoft Visual Studio 2022 - Community edition is fine
-      Know Your Graphics Card name and CUDA version
+  Info:
+  
+    A version of CUDA downloaded from NVIDIA, this version used CUDA 12.8: 
+    Microsoft Visual Studio 2022 - Community edition is fine
+    Know Your Graphics Card name and CUDA version
 
    Instructions:
-   
-      CUDA: 
-        Download the network version of CUDA from NVIDIA, e.g. https://developer.nvidia.com/cuda-12-8-0-download-archive
-        Run installer, when given options for install go to advanced and only select the CUDA, you don't need anything else and don't want to override your current drivers etc.
+    CUDA: 
+        Download the network version of CUDA from NVIDIA, 
+        
+            https://developer.nvidia.com/cuda-12-8-0-download-archive
+   Run installer, when given options for install go to advanced and only select the CUDA, you don't need anything else and don't want to override your current drivers etc.
 <img width="254" height="188" alt="image" src="https://github.com/user-attachments/assets/d3d545d1-f73c-4c11-b3ec-0049c1aca735" />
 
 
@@ -113,6 +114,7 @@ Build Commands, in the blender folder e.g. C:\Blender_git\blender>
 
 
 The build can take hours so remain patient, especially with the CUDA compile, its not stuck, just takes a while.
+
 
 
 
