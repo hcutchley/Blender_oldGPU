@@ -4,7 +4,9 @@ _Description_
 With the release of blender 5.0 gpu minimum requirements have been update to required cuda compute 5.0 or higher and must be a gtx900 series card or later, this Repository contains a patched version of blender where it allows any gpu, though must still be CUDA capable, there's a release version and a full repo if you wish to compile for yourself
 
 _YOU CAN EITHER DOWNLOAD A PATCHED VERSION OF BLENDER FROM RELEASES_
+    
     (THE FIRST TIME YOU LAUNCH BLENDER YOU WILL NEED TO COMPILE CUDA KERNELS) 
+
 OR YOU CAN DO THE PATCH AND COMPILE BLENDER FOR YOURSELF_
 
 _DOWNLOAD ALREADY PATCHED AND COMPILED VERSION OF BLENDER OR THE PATCHED DEVICE.CCP FILE IN RELEASES_ 
