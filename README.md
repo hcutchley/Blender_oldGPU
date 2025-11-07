@@ -4,7 +4,7 @@ With the release of blender 5.0 gpu minimum requirements have been update to req
 
 
 Full Patch Instructions:
-    https://github.com/hcutchley/Blender_oldGPU/blob/main/Instructions.md
+    https://github.com/hcrutchley/Blender_oldGPU/blob/main/Instructions.md
     
 Prerequisties and their installation:
 
