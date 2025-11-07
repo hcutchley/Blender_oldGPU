@@ -61,9 +61,8 @@ Clone Repository - run the following commands in the parent folder
 
 Making Patch:
 
-    navigate to the device.cpp 
-    file and open in either a code editor or notepad; - 
-        located under the blender cloned into:       \intern\cycles\device\cuda\device.cpp 
+    find and open the device.cpp in a text or code editor e.g. notepad - 
+        located under \intern\cycles\device\cuda\device.cpp 
             example: "C:\Blender_git\blender\intern\cycles\device\cuda\device.cpp"
 
     Find the function: if (!cudaSupportsDevice(num)) 
