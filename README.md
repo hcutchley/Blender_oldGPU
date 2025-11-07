@@ -5,8 +5,8 @@ With the release of blender 5.0 gpu minimum requirements have been update to req
 
 **DOWNLOAD A PATCHED VERSION OF BLENDER FROM RELEASES**
 
-    _(When you run this build for the first time, Blender will compile CUDA kernels for your GPU automatically.  
-    This may take several minutes — it happens only once.g)_
+    *(When you run this build for the first time, Blender will compile CUDA kernels for your GPU automatically.*
+    *This may take several minutes — it happens only once)*
 
 **OR FOLLOW INSTRUTCTIONS AND COMPILE BLENDER FOR YOURSELF**
 
