@@ -59,7 +59,8 @@ Making Patch:
     example location "C:\Blender_git\blender\intern\cycles\device\cuda\device.cpp"
 
    Find the function: if (!cudaSupportsDevice(num)) 
-    Should look like:
+    
+   Should look like:
 
     if (!cudaSupportsDevice(num)) {
       LOG_INFO << "Ignoring device \"" << name << "\", this graphics card is no longer supported.";
@@ -109,6 +110,7 @@ Build Commands, in the blender folder e.g. C:\Blender_git\blender>
 
 
 The build can take hours so remain patient, especially with the CUDA compile, its not stuck, just takes a while.
+
 
 
 
