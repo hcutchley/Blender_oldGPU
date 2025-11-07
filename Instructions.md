@@ -23,16 +23,24 @@ Prerequisties
 
 Ignore Any Warnings about visual studio not found at the end
 
-      Visual Studio Code:
-        Download from: https://visualstudio.microsoft.com/downloads/   - Community Edition Works
-        When installing check the following:  
+   Visual Studio Code:
+   
+   Download from
+        
+        https://visualstudio.microsoft.com/downloads/   - Community Edition Works
+   When installing check the following:  
 <img width="146" height="256" alt="image" src="https://github.com/user-attachments/assets/fe53fab3-049b-4c80-af62-3b2dd1d6e0aa" />
  
 
-      CUDA Capability:
-      Check your card at https://developer.nvidia.com/cuda-gpus or https://developer.nvidia.com/cuda-legacy-gpus
-      Remember your name and cuda compute capability, mine for example was 6.1
-
+   CUDA Capability:
+   
+   Check your card at 
+   
+      https://developer.nvidia.com/cuda-gpus 
+   or 
+   
+      https://developer.nvidia.com/cuda-legacy-gpus
+   Remember your name and cuda compute capability, mine for example was 6.1
 
 
 
@@ -117,6 +125,7 @@ Build Commands, in the blender folder e.g. C:\Blender_git\blender>
 
 
 The build can take hours so remain patient, especially with the CUDA compile, its not stuck, just takes a while.
+
 
 
 
