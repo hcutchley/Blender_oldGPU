@@ -20,6 +20,8 @@ Prerequisties
         
             https://developer.nvidia.com/cuda-12-8-0-download-archive
    Run installer, when given options for install go to advanced and only select the CUDA, you don't need anything else and don't want to override your current drivers etc.
+
+   
 <img width="254" height="188" alt="image" src="https://github.com/user-attachments/assets/d3d545d1-f73c-4c11-b3ec-0049c1aca735" />
 
 
