@@ -59,21 +59,18 @@ Clone Repository - run the following commands in the parent folder
 
 Making Patch:
 
-   located under \intern\cycles\device\cuda\device.cpp 
-    Open the device.ccp in a text/code editor
-            example: "C:\Blender_git\blender\intern\cycles\device\cuda\device.cpp"
-
+   Open device.cpp
+   
+    example location "C:\Blender_git\blender\intern\cycles\device\cuda\device.cpp"
 
    Find the function: if (!cudaSupportsDevice(num)) 
-        Should look like:
+    Should look like:
 
     if (!cudaSupportsDevice(num)) {
       LOG_INFO << "Ignoring device \"" << name << "\", this graphics card is no longer supported.";
       continue;
     }
-
-
-   Replace the function with the one below and Save the file - READ THE INSTRUCTIONS ABOVE FUNCTION FIRST
+   Replace the function with the one below and save - READ THE INSTRUCTIONS BELOW FIRST
 
    //Using your graphics card name in place of MX350 and the (major == 6 && minor == 1) is for CUDA 6.1, replace with your CUDA structure//
     Function:
