@@ -42,7 +42,7 @@ Parent Folder: Must not have spaces in name, then cd into Folder
 
     e.g.    C:\Blender_git>
 
-Clone Repository - run the following commands
+Clone Repository - run the following commands in the parent folder
 
     git clone https://projects.blender.org/blender/blender.git blender
 
@@ -60,7 +60,9 @@ Clone Repository - run the following commands
 
 
 Making Patch:
-    navigate to the device.cpp file and open in either a code editor or notepad; - 
+
+    navigate to the device.cpp 
+    file and open in either a code editor or notepad; - 
         located under the blender cloned into:       \intern\cycles\device\cuda\device.cpp 
             example: "C:\Blender_git\blender\intern\cycles\device\cuda\device.cpp"
 
@@ -76,6 +78,7 @@ Making Patch:
 
     //Using your graphics card name in place of MX350 and the (major == 6 && minor == 1) is for CUDA 6.1, replace with your CUDA structure//
     Function:
+    
     if (!cudaSupportsDevice(num)) {
         int major = 0, minor = 0;
         cuDeviceGetAttribute(&major, CU_DEVICE_ATTRIBUTE_COMPUTE_CAPABILITY_MAJOR, num);
