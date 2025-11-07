@@ -36,9 +36,11 @@ Main Instructions:
 Setup:
 
 Parent Folder: Must not have spaces in name, then cd into Folder
+
     e.g.    C:\Blender_git>
 
 Clone Repository - run the following commands
+
     git clone https://projects.blender.org/blender/blender.git blender
 
     cd blender
