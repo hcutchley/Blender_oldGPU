@@ -87,18 +87,18 @@ Ignore Any Warnings about visual studio not found at the end
    Replace MX350 with your card name, and 6.1 CUDA is (major == 6 && minor == 1), change for your cuda
     Function:
     
-    if (!cudaSupportsDevice(num)) {
-        int major = 0, minor = 0;
-        cuDeviceGetAttribute(&major, CU_DEVICE_ATTRIBUTE_COMPUTE_CAPABILITY_MAJOR, num);
-        cuDeviceGetAttribute(&minor, CU_DEVICE_ATTRIBUTE_COMPUTE_CAPABILITY_MINOR, num);
-
-        if (major == 6 && minor == 1) {
-            // MX350: allow
-        } else {
-            LOG_INFO << "Ignoring device \"" << name << "\", this graphics card is no longer supported.";
-            continue;
+        if (!cudaSupportsDevice(num)) {
+            int major = 0, minor = 0;
+            cuDeviceGetAttribute(&major, CU_DEVICE_ATTRIBUTE_COMPUTE_CAPABILITY_MAJOR, num);
+            cuDeviceGetAttribute(&minor, CU_DEVICE_ATTRIBUTE_COMPUTE_CAPABILITY_MINOR, num);
+   
+            if (major == 6 && minor == 1) {
+                // MX350: allow
+            } else {
+                LOG_INFO << "Ignoring device \"" << name << "\", this graphics card is no longer supported.";
+                continue;
+            }
         }
-    }
 
     
         
@@ -126,6 +126,7 @@ Ignore Any Warnings about visual studio not found at the end
 
 
 The build can take hours so remain patient, especially with the CUDA compile, its not stuck, just takes a while.
+
 
 
 
